@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(255, 59, 59), rgb(254, 166, 166), rgb(231, 76, 76));
+    height: 100vh;
+    width: 100vw
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-left: 70px;
+    height: 20%;
+    font-size: 40px;
+    color: white;
+    gap: 10px;
+}
+
+.menu{
+    position: relative;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    gap: 100px;
+    color: white;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.barra{
+    height:30px;
+}
+
+main{
+    display: flex;
+    background-image: url(cocatexto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.mapa{
+    height: 80px;
+    margin: 50px;
+}
+
+.meio {
+    display: flex;
+    font-size: 80px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.fundo{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 74px;
+    top: 132px;
+
+
+}
+
+.cocag{
+    display: flex;
+}
+
+@media (max-width:376px){
+    header{
+        height: 20%;
+        margin: 0px;
+        font-size: 1rem;
+        gap: 0;
+        align-items: center;
+    }
+
+    .menu{
+        gap: 40px;
+        margin: 10px;
+    }
+
+    main{
+        height: 60vh;
+        margin: 0;
+    }
+
+    .meio{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .meio p{
+        transform: translateX(0);
+        top: 75px;
+        font-size: 1.5rem;
+        width: 150px;
+        text-align: center;
+    }
+
+    .cocag{
+        height: 400px;
+    }
+
+    .mapa{
+        height: 30px;
+    }
+
+    .barra{
+        height: 10px;
+    }
+
+    footer{
+        margin: 0;
+        height: 20vh;
+    }
+}

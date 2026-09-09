@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(8, 93, 4), rgb(255, 255, 255), rgb(255, 0, 0));
+    height: 100vh;
+    width: 100vw
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-left: 70px;
+    height: 20%;
+    font-size: 40px;
+    color: white;
+    gap: 10px;
+}
+
+.menu{
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    gap: 100px;
+    color: white;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.barra{
+    height:30px;
+}
+
+main{
+    position: relative;
+    display: flex;
+    background-image: url(images-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    height: 80%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+footer img{
+    height: 80px;
+    margin: 50px;
+}
+
+.meio {
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    color: black;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.meio p{
+    position: relative;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+.fundo{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 74px;
+    top: 132px;
+
+
+}
+
+.pepsig{
+    display: flex;
+    height: 800px;
+}
+
+@media (max-width:375px){
+    header{
+        display: flex;
+        height: 20%;
+        margin: 0px;
+        font-size: 1rem;
+        gap: 0;
+        align-items: center;
+    }
+
+    .menu{
+        gap: 40px;
+        margin: 10px;
+    }
+
+    main{
+        display: flex   ;
+        height: 60vh;
+        margin: 0;
+        background-size: 300px;
+    }
+    
+
+    .meio{
+        margin: 0   ;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .texto{
+        font-size: 1.5rem;
+        width: 200px;
+        color: black;
+    }
+
+    .guaranag{
+        height: 300px;
+    }
+
+    .mapa{
+        height: 30px;
+        gap: 0;
+    }
+
+    .barra{
+        height: 20px;
+    }
+
+    footer{
+        display: flex;
+        margin: 0;
+        height: 20vh;
+    }
+}
